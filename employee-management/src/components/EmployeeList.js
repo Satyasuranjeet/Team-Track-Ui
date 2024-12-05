@@ -27,7 +27,7 @@ const EmployeeManagement = () => {
 
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/employees");
+      const response = await axios.get("https://ems-backend-2.vercel.app/employees");
       setEmployees(response.data);
     } catch (error) {
       console.error("Error fetching employees:", error);
@@ -47,9 +47,9 @@ const EmployeeManagement = () => {
 
     try {
       if (editEmployee) {
-        await axios.put(`http://localhost:5000/employee/${editEmployee.id}`, employeeData);
+        await axios.put(`https://ems-backend-2.vercel.app/employee/${editEmployee.id}`, employeeData);
       } else {
-        await axios.post("http://localhost:5000/employee", employeeData);
+        await axios.post("https://ems-backend-2.vercel.app/employee", employeeData);
       }
       fetchEmployees();
       resetForm();
@@ -61,7 +61,7 @@ const EmployeeManagement = () => {
 
   const handleDeleteEmployee = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/employee/${id}`);
+      await axios.delete(`https://ems-backend-2.vercel.app/employee/${id}`);
       fetchEmployees();
     } catch (error) {
       console.error("Error deleting employee:", error);

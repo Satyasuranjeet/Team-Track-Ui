@@ -18,7 +18,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchEmployeeData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/employees');
+        const response = await axios.get('https://ems-backend-2.vercel.app/employees');
         const employeesData = response.data;
 
         // Frontend calculations

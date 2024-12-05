@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000'; // Flask API URL
+const API_URL = 'https://team-track-ui.vercel.app/'; // Flask API URL
 
 // Function to get all employees
 export async function getEmployees() {
