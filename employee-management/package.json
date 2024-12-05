@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://ems-backend-2.vercel.app/"
+  "proxy": "https://ems-backend-2.vercel.app"
 }
