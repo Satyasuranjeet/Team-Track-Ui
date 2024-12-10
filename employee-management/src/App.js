@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import EmployeeList from './components/EmployeeList';
 import Dashboard from './components/Dashboard';
-import { Users, BarChart2 } from 'lucide-react';
+import { Users, BarChart2, ExternalLink } from 'lucide-react';
 import Navbar from './components/Navbar';
 
 function App() {
@@ -27,6 +27,16 @@ function App() {
               >
                 <Users className="mr-3" /> Employees
               </Link>
+            </li>
+            <li>
+              <a 
+                href="https://ems-paid-fe.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center hover:bg-gray-700 p-2 rounded"
+              >
+                <ExternalLink className="mr-3" /> Tasks
+              </a>
             </li>
           </ul>
         </nav>
